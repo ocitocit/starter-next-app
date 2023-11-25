@@ -8,15 +8,15 @@ import { Button } from '@/components/ui/button';
 export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 
-  // const [mounted, setMounted] = useState(false);
-  //
-  // useEffect(() => {
-  //   setMounted(true);
-  // }, []);
-  //
-  // if (!mounted) {
-  //   return null;
-  // }
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <Button
@@ -24,8 +24,8 @@ export const ToggleTheme = () => {
       size="icon"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
     >
-      <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden" />
-      <Moon className="hidden h-5 w-5 dark:block" />
+      <Moon className="h-5 w-5 dark:hidden" />
+      <Sun className="hidden h-[1.5rem] w-[1.3rem] dark:block" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
