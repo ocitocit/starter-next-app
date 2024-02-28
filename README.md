@@ -6,7 +6,15 @@ lintstaged, and commitlint
 ### how to clone specific branch
 
 ```
-https://github.com/cli/cli/discussions/5847
+$ gh help repo clone
+Clone a GitHub repository locally. Pass additional `git clone` flags by listing
+them after "--".
+```
+
+example:
+
+```
+gh repo clone <repo> -- --branch <branch>
 ```
 
 ## Getting Started
