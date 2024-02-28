@@ -3,6 +3,12 @@
 this starter next app include prettier-tailwind, prettier, husky,
 lintstaged, and commitlint
 
+### how to clone specific branch
+
+```
+https://github.com/cli/cli/discussions/5847
+```
+
 ## Getting Started
 
 First, run the development server:
